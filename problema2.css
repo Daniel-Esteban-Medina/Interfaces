@@ -1,0 +1,11 @@
+body{
+    color:green;
+}
+
+p,span{
+    border: 1px solid blue;   
+}
+a{
+    text-decoration: none;
+    color: green;
+}

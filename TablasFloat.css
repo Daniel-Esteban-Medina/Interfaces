@@ -1,0 +1,50 @@
+div{
+    margin: 5px;
+    border: 1px solid black;
+    width: 225px;
+    height: 240px; 
+}
+
+/* TABLA 1 */
+#caja1 {
+    width: 100px;
+    height: 100px; 
+    float: left;
+}
+#caja2 {
+    width: 100px;
+    height: 30px; 
+    float: right;
+}
+#caja3 {
+    width: 100px;
+    height: 58px; 
+    float: right;
+}
+.caja45 {
+    width: 100px;
+    height: 17px; 
+    float: left;
+}
+.caja67 {
+    width: 100px;
+    height: 80px; 
+    float: left;
+}
+
+/* TABLA 2 */
+.smallCeldas {
+    width: 80px;
+    height: 15px; 
+    float: left;
+}
+#celda5{
+    width: 120px;
+    height: 97px; 
+    float: right;
+}
+#celda6{
+    width: 213px;
+    height: 120px; 
+    float: left;
+}
