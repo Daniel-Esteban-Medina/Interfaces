@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pseudo elementos</title>
+        <style>
+            p::first-line{
+                color: red;
+            }
+            p::after{
+                content: "ADIOS";
+                color:blue;
+            }
+            a{
+                display:block;
+                margin: auto;
+            }
+            /* : = seudo clase      :: = seudo elemento*/
+            a:link{
+                color: red;
+                background-color: lightgreen;
+            }
+            a:visited{
+                color: blue;
+                background-color: greenyellow;
+            }
+        </style>
+    </head>
+        <body>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, iure doloremque at eveniet hic dignissimos soluta facere quo exercitationem delectus quisquam perferendis recusandae esse illum voluptas. Adipisci distinctio sit vitae?</p>
+            <br><br>
+            <a href="https://www.youtube.com/?app=desktop&hl=es">enlace1</a>
+            <a href="https://es.wikipedia.org/wiki/Enrique_Tierno_Galv%C3%A1n">enlace2</a>
+            <a href="https://site.educa.madrid.org/ies.tiernogalvan.madrid/">enlace3</a>
+            <a href="https://fpabloiglesias.es/entrada-db/tierno-galvan-enrique/">enlace4</a>
+        </body>
+</html>

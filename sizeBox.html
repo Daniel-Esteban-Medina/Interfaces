@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SizeBox</title>
+        <style>
+            div{
+                border: 1px solid black;
+            }
+            #div1{
+                height: 30px;
+                width: 30px;
+                padding: 20px;
+                margin: 40px;
+                box-sizing: border-box;
+            }
+            #div2{
+                height: 30px;
+                width: 30px;
+                padding: 20px;
+                margin: 40px;
+            }
+            #div3{
+                font-size: 30px;
+                border-radius: 2em;
+                text-align: center;
+                margin: 40px 50px;
+                display: inline;
+                padding: 30px;
+                background-color: green;
+                transform:rotate(-30deg);
+                box-shadow: 30px 40px 20px 10px #000;
+                float:left;
+            }
+            #div4{
+                font-size: 30px;
+                border-radius: 2em;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 30px;
+                background-color: green;
+                transform:rotate(-30deg);
+                box-shadow: 30px 40px 20px 10px #000;
+                float:right;
+            }
+            :root{
+                --color-primario: #000;
+                --fuente-principal: "Lucida Console", "Courier New", monospace;
+                
+            }
+            #div5{
+                background-color: var(--color-primario);
+                font-family: var(--fuente-principal);
+                color: aliceblue;
+                float: left;
+            }
+            #div6{
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+            <h3>box-sizing:</h3>       
+            <div id="div1">con</div>
+            <div id="div2">sin</div>
+            <h3>cajas redondeadas:</h3><br>
+            <div id="div3">Hola mundo</div>
+            <div id="div4">Hola tierra</div>
+            <br><br><br><br><br><br><br><br><br><h3>cajas con variables:</h3><br>
+            <div id="div5">Hola mundo</div>
+            <div id="div6">Hola tierra</div>
+        </body>
+</html>

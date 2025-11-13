@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .contenedorFlex{
+                display: flex;
+                /*flex-direction: column; lo combia de linea a columna
+                flex-direction:column-reverse; da la vuelta al orden de los intems*/
+                flex-wrap: wrap;/* Hace que el contenido pueda adaptarse bajando*/
+            }
+            .flexItem{
+                background-color: palevioletred;
+                padding: 2px;
+                margin: 2px;
+                height: 40px;
+                min-width: 100px; /* Tamaño minimo de ancho*/
+                flex: 1; /* si no se puede mantener el min width se baja 1*/
+            }
+            .flexItemRed{
+                background-color: rgb(240, 15, 15);
+                padding: 2px;
+                margin: 2px;
+                height: 40px;
+                min-width: 100px;
+                flex: 1;
+            }
+            .flexItemBlue{
+                background-color: rgb(56, 15, 240);
+                padding: 2px;
+                margin: 2px;
+                height: 40px;
+                min-width: 100px;
+                flex: 1;
+            }
+        </style>
+    </head>
+        <body>
+            <div class="contenedorFlex">
+                <div class="flexItemBlue"></div>
+                <div class="flexItem"></div>
+                <div class="flexItem"></div>
+                <div class="flexItem"></div>
+                <div class="flexItem"></div>
+                <div class="flexItem"></div>
+                <div class="flexItem"></div>
+                <div class="flexItemRed"></div>
+            </div>    
+        </body>
+</html>
