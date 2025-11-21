@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Navbar esencial</title>
+
+<style>
+  body{
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  /* --- NAVBAR --- */
+  .navbar{
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: .8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Logo o título */
+  .navbar .logo{
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  /* Contenedor de enlaces */
+  .navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar a{
+    text-decoration: none;
+    color: #333;
+    font-size: .95rem;
+  }
+
+  .navbar a:hover{
+    color: #0077ff;
+  }
+
+  /* Responsive (opcional básico) */
+  @media (max-width: 600px){
+    .navbar ul{
+      gap: .7rem;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- 🔵 NAVBAR ESENCIAL -->
+<nav class="navbar">
+  <div class="logo">MiSitio</div>
+
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Acerca</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>
