@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            nav{
+                display:grid;
+                align-items: stretch;
+                grid-column: 33% 33% 33%;
+                grid-template-rows: 40px;
+                background-color: aqua;
+                width: 100%;
+            }
+            nav * {
+                /* lo que sea * { aplica Propiedades para TODOS los elementos dentro. Con :not(#miElemento) puedes dejar fuera un elemento */
+                text-decoration: none;
+                font-size: 25px;
+                text-align: center;
+            }
+            #en1{
+                grid-column: 1;
+                grid-row: 1;
+                border-right: 1px solid rgb(166, 166, 167);             /* gap establece el espacio entre los elementos de un contenedor */
+            }
+            #en2{
+                grid-column: 2;
+                grid-row: 1;
+                border-right: 1px solid rgb(166, 166, 167);
+            }
+            #en3{
+                grid-column: 3;
+                grid-row: 1;
+                border-left: 1px solid rgb(166, 166, 167);
+            }
+            nav a:hover{
+                color:rgb(65, 4, 0);
+                background-color: rgb(36, 149, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a id="en1" href="#">pag1</a>
+            <a id="en2" href="#">pag2</a>
+            <a id="en3" href="#">pag3</a>
+        </nav>
+    </body>
+</html>
