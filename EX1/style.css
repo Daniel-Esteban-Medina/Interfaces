@@ -9,6 +9,10 @@ body{
     margin-bottom: 20%;
     justify-content: stretch;
     background-image: image-set("background.jpg");
+    background-size: cover;        /* Ajusta la imagen al tamaño de la pantalla */
+    background-repeat: no-repeat;  /* Evita que se repita */
+    background-position: center;   /* Centra la imagen */
+    background-attachment: fixed;  /* La deja fija al hacer scroll */
     gap: 5px;
 }
 header{
