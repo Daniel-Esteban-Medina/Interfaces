@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive media Query</title>
+        <style>
+            .contenedor{
+                background-color: rgb(119, 119, 119);
+                height: 400px;
+                width: 100%;
+            }
+            .caja{
+                animation-name: movimiento;
+                animation-duration: 8s;
+                background-color: bisque;
+                height: 80px;
+                width: 80px;
+                margin: 40px;
+                position: relative;
+            }
+            @keyframes movimiento {
+                form{
+                    left: 0%;
+                }
+                to{
+                    left: 80%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="caja"></div>
+        </div>
+    </body>
+</html>

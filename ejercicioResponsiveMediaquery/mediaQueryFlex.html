@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive media Query</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            @media (max-with: 775px) and (min-){
+                .container{
+                    grid-template-areas: 
+                    "header"
+                    "main"
+                    "footer"
+                    "aside"
+                }
+            }
+            body{
+                display: flexbox;
+
+            }
+            header{
+                width: 100%;
+                background-color: rgb(146, 255, 146);
+                height: 40px;
+            }
+            footer{
+                width: 100%;
+                background-color: rgb(173, 15, 173);
+                height: 40px;
+            }
+            #main{
+                background-color: rgb(62, 62, 190);
+                height: 400px;
+                width: auto;
+            }
+            #aside{
+                background-color: rgb(226, 226, 99);
+                height: 400px;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>con flex</header>
+        <div id="main">main</div>
+        <div id="aside">aside</div>
+        <footer>pie de pagina</footer>
+    </body>
+</html>

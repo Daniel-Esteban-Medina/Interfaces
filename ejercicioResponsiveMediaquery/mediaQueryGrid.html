@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive media Query</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                display: grid;
+                grid-template-columns: 75% 25%;
+                grid-template-rows: 10% 80% 10%;
+                height: 100vh;
+                grid-template-areas: 
+                "uno uno"
+                "dos tres"
+                "cuatro cuatro";
+            }
+            header{
+                background-color: rgb(146, 255, 146);
+                grid-area: uno;
+            }
+            #main{
+                background-color: rgb(62, 62, 190);
+                grid-area: dos;
+            }
+            #aside{
+                background-color: rgb(226, 226, 99);
+                grid-area: tres;
+            }
+            footer{
+                background-color: rgb(173, 15, 173);
+                grid-area: cuatro;
+            }
+            @media (max-width: 800px) and (min-width: 400px){
+                body{
+                    grid-template-areas: 
+                    "uno"
+                    "dos"
+                    "tres"
+                    "cuatro"
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>con grid</header>
+        <div id="main">main</div>
+        <div id="aside">aside</div>
+        <footer>footer</footer>
+    </body>
+</html>
