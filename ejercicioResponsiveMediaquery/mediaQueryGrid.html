@@ -35,17 +35,19 @@
             }
             @media (max-width: 800px) and (min-width: 400px){
                 body{
+                    grid-template-columns: auto;
+                    grid-template-rows: 10% 60% 20% 10%;
                     grid-template-areas: 
                     "uno"
                     "dos"
                     "tres"
-                    "cuatro"
+                    "cuatro";
                 }
             }
         </style>
     </head>
     <body>
-        <header>con grid</header>
+        <header>Con grid</header>
         <div id="main">main</div>
         <div id="aside">aside</div>
         <footer>footer</footer>
