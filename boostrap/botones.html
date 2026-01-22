@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bootstrap 5</title>
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="bootstrap.min.css">
+
+   <style>
+      body{
+         background-color: lightcoral;
+      }
+   </style>
+</head>
+<body>
+
+<div class="container">
+   <div class="row mt-5">
+      <div class="col-12 col-md-6">
+
+         <!-- Dropdown normal -->
+         <div class="dropdown mb-4">
+            <div class="btn-group">
+               <button class="btn btn-success">Botón</button>
+
+               <button
+                  class="btn btn-success dropdown-toggle"
+                  type="button"
+                  id="dropdownNormal"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+               </button>
+
+               <ul class="dropdown-menu" aria-labelledby="dropdownNormal">
+                  <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                  <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                  <li><a class="dropdown-item" href="#">Opción 3</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <!-- Dropstart -->
+         <div class="btn-group dropstart mb-4">
+            <button
+               class="btn btn-success dropdown-toggle"
+               type="button"
+               id="dropdownStart"
+               data-bs-toggle="dropdown"
+               aria-expanded="false">
+               Dropstart
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownStart">
+               <li><a class="dropdown-item" href="#">Opción 1</a></li>
+               <li><a class="dropdown-item" href="#">Opción 2</a></li>
+               <li><a class="dropdown-item" href="#">Opción 3</a></li>
+            </ul>
+         </div>
+
+         <!-- Dropdown personalizado -->
+         <div class="dropdown mb-4">
+            <div class="btn-group">
+
+               <button
+                  class="btn btn-success dropdown-toggle"
+                  type="button"
+                  id="dropdownPersonalizado"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown personalizado
+               </button>
+
+               <ul class="dropdown-menu" aria-labelledby="dropdownPersonalizado">
+                  <li class="dropdown-header">Encabezado</li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                  <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                  <li><a class="dropdown-item" href="#">Opción 3</a></li>
+               </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (incluye Popper) -->
+<script src="bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bootstrap 5</title>
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="bootstrap.min.css">
+
+   <style>
+      body{
+         background-color: lightcoral;
+      }
+   </style>
+</head>
+<body>
+
+<div class="container">
+   <div class="row mt-5">
+      <div class="col-12 col-md-6">
+         <!-- List group -->
+         <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Elemento 1</a>
+            <a href="#" class="list-group-item list-group-item-action">Elemento 2</a>
+            <a href="#" class="list-group-item list-group-item-action active">Elemento 3</a>
+            <a href="#" class="list-group-item list-group-item-action disabled">Elemento 4</a>
+            <a href="#" class="list-group-item list-group-item-action">Elemento 5</a>
+         </div>
+         <!-- List group -->
+         <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Elemento 1</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">Elemento 2</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Elemento 3</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light">Elemento 4</a>
+         </div>
+        <!-- List group -->
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            ELEMENTO #1
+            <span class="badge bg-primary rounded-pill">badge</span>
+        </li>
+        <li class="list-group-item">
+        <div class="form-check">
+            <input
+                class="form-check-input"
+                type="checkbox"
+                id="checkbox-1"
+                name="checkbox-1">
+            <label class="form-check-label" for="checkbox-1">
+                Checkbox 1º
+            </label>
+        </div>
+        </li>
+    </ul>
+    
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Abrir modal</button>
+    <div class="modal fade" id="miModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content p-3">
+        <h5 class="modal-title">Título</h5>
+        <p>Contenido del modal</p>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (incluye Popper) -->
+<script src="bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bootstrap 5</title>
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <style>
+      body{
+         background-color: lightcoral;
+      }
+   </style>
+</head>
+<body>
+
+<div class="container">
+   <div class="row mt-5">
+      <div class="col-6">
+
+         <label for="rango" class="form-label">Rangos</label>
+         <input type="range" class="form-range" id="rango" min="0" max="1000" step="100">
+
+         <div class="d-flex justify-content-between">
+            <span>0€</span>
+            <span>1000€</span>
+         </div>
+
+         <div class="input-group mb-3 mt-3">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="nombre">
+         </div>
+
+         <div class="input-group">
+            <label for="pais" class="input-group-text">País</label>
+            <select name="" id="pais" class="form-select">
+                <option value="spain">España</option>
+                <option value="italia">Italia</option>
+                <option value="francia">Francia</option>
+            </select>
+         </div>
+         <form action="">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control is-valid" placeholder="nombre" id="nombre" name="nombre">
+            <div class="valid-feedback">Correcto!!!</div>
+
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control is-invalid" placeholder="Correo" id="correo" name="correo">
+            <div class="invalid-feedback">Incorrecto!!!</div>
+         </form>
+      </div>
+   </div>
+</div>
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
