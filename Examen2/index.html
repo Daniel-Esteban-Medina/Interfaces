@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examen 2</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <h1>2da. Eval - grid Bootstrap y animación</h1>
+            <a href="#apartadoA">apartado A</a>
+            <a href="#apartadoB">apartado B</a>
+            <a href="#apartadoC">apartado C</a>
+        </header>
+        <h3 id="apartadoA">Apartado A CSS Grid <span id="badgeA" class="badge bg-primary rounded-pill">apartado grid</span></h3>
+        <p>grid responsive que cambie de tamaño</p>
+        <div id="panelServicios">
+            <div id="card1" class="card">
+                <div class="card-header">Encabezado carta</div>
+                <div class="card-body">Lorem ipsum, dolor sit amet consectetur ad accusantium!</div>
+                <div class="card-footer"><button>Carta 1</button></div>
+            </div>
+            <div id="card2" class="card">
+                <div class="card-header">Encabezado carta</div>
+                <div class="card-body">Lorem ipsum, dolor sit amet consectetur ad accusantium!</div>
+                <div class="card-footer"><button>Carta 2</button></div>
+            </div>
+            <div id="card3" class="card">
+                <div class="card-header">Encabezado carta</div>
+                <div class="card-body">Lorem ipsum, dolor sit amet consectetur ad accusantium!</div>
+                <div class="card-footer"><button>Carta 3</button></div>
+            </div>
+            <div id="card4" class="card">
+                <div class="card-header">Encabezado carta</div>
+                <div class="card-body">Lorem ipsum, dolor sit amet consectetur ad accusantium!</div>
+                <div class="card-footer"><button>Carta 4</button></div>
+            </div>
+            <div id="card5" class="card">
+                <div class="card-header">Encabezado carta</div>
+                <div class="card-body">Lorem ipsum, dolor sit amet consectetur ad accusantium!</div>
+                <div class="card-footer"><button>Carta 5</button></div>
+            </div>
+        </div>
+
+        <h3 id="apartadoB">Apartado B Bootstrap <span id="badgeB" class="badge bg-primary rounded-pill">apartado boostrap</span></h3>
+        <p>formularios con boostrap</p>
+        <div id="formularios">
+            <div id="registro" class="card">
+                <div class="card-header">Registro</div>
+                <div class="card-body">
+                    <form action="">
+                        <label class="labelRegistro" for="nombre">Usuario</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Paco123">
+                        <label class="labelRegistro" for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="User@email.com">
+                        <label class="labelRegistro" for="pass">Contraseña: </label>
+                        <input type="password" id="pass" name="pass" placeholder="....">
+                        <label class="labelRegistro" for="rol">Rol: </label>
+                        <select>
+                            <option value="manager">manager</option>
+                            <option value="secretario">secretario</option>
+                            <option value="oficinista">oficinista</option>
+                        </select>
+                        <label for="descripcion" class="labelRegistro"></label>
+                        <textarea name="descripcion" id="descripcion" placeholder="Escribe aquí"></textarea>
+                        <input type="checkbox" id="terminos" name="terminos"><label for="terminos">Aceptas los terminos y condiciones</label>
+                    </form>
+                </div>
+                <div class="card-footer"><p>Lorem ipsum dolor sit amet.</p></div>
+            </div>
+            <div id="form2" class="card">
+                <form action="">
+                    <div id="cabecera2" class="card-header">Formulario 2</div>
+                    <label class="labelForm2" for="nombre">Usuario</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Paco123">
+                    <label class="labelForm2" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="User@email.com">
+                </form>
+            </div>
+        </div>
+
+        <h3 id="apartadoC">Apartado C animación <span id="badgeA" class="badge bg-primary rounded-pill">apartado animación</span></h3>
+        <div id="pelota">.</div>
+        <script src="css/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
