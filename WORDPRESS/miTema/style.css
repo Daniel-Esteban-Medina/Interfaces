@@ -54,3 +54,20 @@ h1 {
 header{
     background-color: black;
 }
+
+
+.site-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: black;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.menu a{
+    text-decoration: none;
+    color: orange;
+}

@@ -34,7 +34,7 @@ function mitemplat_scripts_styles() {
    
     
     // Hoja de estilos principal
-    wp_enqueue_style('style', get_stylesheet_uri(), array('normalize','mygooglefont'), '1.0.0');
+    wp_enqueue_style('style', get_stylesheet_uri(), array('normalize', 'slicknavCSS', 'mygooglefont'), '1.0.0');
 
     //Carga de archivos js
     wp_enqueue_script( 'slicknavJS', get_template_directory_uri() . '/js/jquery.slicknav.min.js', array('jquery'), '1.0.10', true );

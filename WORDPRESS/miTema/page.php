@@ -7,7 +7,7 @@
             <!-- CARGAMOS IMAGEN DESTACADA -->  
 
             <?php if(has_post_thumbnail()):
-                the_post_thumbnail('blog', array('class'=> 'imagen-destacada')); 
+                the_post_thumbnail('squere', array('class'=> 'imagen-destacada')); 
             endif;
             ?>
 
