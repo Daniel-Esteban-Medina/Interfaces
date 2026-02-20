@@ -29,16 +29,25 @@ function mitemplat_scripts_styles() {
     wp_enqueue_style( 'normalize', get_template_directory_uri(  ) . '/css/normalize.css', array(), '8.0.1');
 
     wp_enqueue_style('slicknavCSS', get_template_directory_uri() . '/css/slicknav.min.css', array(), '1.0.0');
+    wp_enqueue_style( 'bootstrapcss', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' );
 
-    wp_enqueue_style( 'mygooglefont', 'https://fonts.google.com/share?selection.family=Montserrat:wght@200;500%7COpen%20Sans:ital,wght@0,300;0,400;1,300%7CRoboto:wght@100', array(), '1.0.0' );
+    wp_enqueue_style(
+    'mygooglefont',
+    'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100&display=swap',
+    array(),
+    null
+    );
    
     
     // Hoja de estilos principal
-    wp_enqueue_style('style', get_stylesheet_uri(), array('normalize', 'slicknavCSS', 'mygooglefont'), '1.0.0');
+    wp_enqueue_style('style', get_stylesheet_uri(), array('normalize', 'slicknavCSS', 'mygooglefont', 'bootstrapcss'), '1.0.0');
 
     //Carga de archivos js
     wp_enqueue_script( 'slicknavJS', get_template_directory_uri() . '/js/jquery.slicknav.min.js', array('jquery'), '1.0.10', true );
     wp_enqueue_script( 'scripts', get_template_directory_uri( ) . '/js/scripts.js', array('jquery', 'slicknavJS'), '1.0.0', true );
+    wp_enqueue_script( 'jquery' );
+    // Bootstrap JS
+    wp_enqueue_script( 'bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array( 'jquery' ), '3.3.3', true );
     
 }
 add_action( 'wp_enqueue_scripts', 'mitemplat_scripts_styles' );
