@@ -21,6 +21,8 @@ body{
 header{
     background-color: black;
     color: yellow;
+    display: flex;
+    flex-direction: row;
 }
 footer{
     color: yellow;
@@ -29,4 +31,7 @@ footer{
 a:hover{
     color: black;
     background-color: yellow;
+}
+h1{
+    color: yellow;
 }
